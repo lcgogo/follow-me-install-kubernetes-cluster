@@ -141,6 +141,10 @@ $
 ```
 
 最先启动的 etcd 进程会卡住一段时间，等待其它节点上的 etcd 进程加入集群，为正常现象。
+如果只有一个节点，systemctl status etcd的状态会保持在
+Active: activating (start)
+有2个或以上节点启动后，systemctl status etcd的状态为正常
+Active: active (running)
 
 在所有的 etcd 节点重复上面的步骤，直到所有机器的 etcd 服务都已启动。
 
