@@ -14,6 +14,8 @@ The connection to the server localhost:8080 was refused - did you specify the ri
 本文档介绍下载和配置 kubernetes 集群命令行工具 kubectl 的步骤。
 
 需要将下载的 kubectl 二进制程序和生成的 `~/.kube/config` 配置文件拷贝到**所有使用 kubectl 命令的机器**。
+kubectl是一个用于操作kubernetes集群的命令行接口，通过客户端的kubectl命令集操作，API Server响应对应的命令结果，从而达到对kubernetes集群的管理。
+kubelet是Kubernetes的一个核心内嵌组件。Kubelet负责维护pod（应用实例）集合。Pod集合由本地系统的一个或多个容器构成。在Kubernetes集群中，kubelet作为本地代理，通过访问Kubernetes的API服务器，监控PodSpecs的状态。Kubelet也负责注册节点到Kubernetes，发送事件和pod状态，汇报资源利用率。
 
 ## 使用的变量
 
